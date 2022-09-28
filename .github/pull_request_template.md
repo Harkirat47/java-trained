@@ -2,7 +2,7 @@
 
 # `Branch Name` Pull Request
  - [ ] List the different exercises you completed
- - [ ] `Arithmetics`
+ - [ ] `Ar+-ithmetics`
  - [ ] `Abstraction`
 
 # Notes
