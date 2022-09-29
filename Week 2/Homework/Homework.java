@@ -12,62 +12,65 @@ public class Homework {
         array[1] = "enter operator";
         array[2] = "enter seccond number";
     
-        for (int index = 0; index < 1; index++) {
+        for (int index = 0; index < 1;) {
             System.out.println(array[0]);
             Double numa = scanner.nextDouble();
             scanner.nextLine();
 
             System.out.println(array[1]);
-            String operator = scanner.nextLine();
+            char operator = scanner.next().charAt(0);
 
             System.out.println(array[2]);
             Double numb = scanner.nextDouble();
             scanner.nextLine();
 
-            if(operator == "+"){
+            if(operator == '+'){
                 result = numa + numb;
                 System.out.println(result);
             }
-            else if (operator == "-"){
+            else if (operator == '-'){
                 result = numa - numb;
                 System.out.println(result);
             }
-            else if(operator == "/"){
+            else if(operator == '/'){
                 result = numa / numb;
                 System.out.println(result);
             }
-            else if(operator == "*"){
+            else if(operator == '*'){
                 result = numa * numb;
                 System.out.println(result);
             }
-            else if(operator == "%"){
+            else if(operator == '%'){
                 result = numa % numb;
                 System.out.println(result);
             }
-            else if(operator == "^"){
+            else if(operator == '^'){
                 result = Math.pow(numa,numb);
                 System.out.println(result);
             }
-            else if(operator == "sqrt"){
+            else if(operator == '2'){
                 result = (Math.sqrt(numa)*numb);
                 System.out.println(result);
             }
-            else if(operator == "cbrt"){
+            else if(operator == '3'){
                 result = (Math.cbrt(numa)*numb);
                 System.out.println(result);
             }
-            else if(operator == "hypotnuse"){
+            else if(operator == 'h'){
                 result = Math.hypot(numa, numb);
                 System.out.println(result);
             }
-            
+            System.out.println("WANT TO RUN CALCULATION AGAIN?(y/n)");
+            char yeno = scanner.next().charAt(0);
+            if (yeno == 'y') {
+                index = 0;
+            }
+            else{
+                System.out.println("BYE!");
+                index = 1;
+            }
         }
-    
     }
-
-
-
-
-    }
+}
     
 
