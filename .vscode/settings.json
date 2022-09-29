@@ -1,7 +1,8 @@
 {
     "java.project.sourcePaths": [
+        "Week 2/While Loops",
         "Week 2/Variables",
         "Week 2/Homework",
-        "Week 2/While Loops"
+        "Week 2/Logic"
     ]
 }
